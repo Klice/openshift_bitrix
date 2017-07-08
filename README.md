@@ -12,7 +12,7 @@ This template will create:
 
 ## How to use
 
-`oc process bitrix_template.json -p SOURCE_REPOSITORY_URL='<your git>' -p BITRIX_LICENSE_KEY='<license>' -p BITRIX_URL='http://<url-to-bitrix-archive>' | oc create -f -`
+`oc process -f bitrix_template.json -p SOURCE_REPOSITORY_URL='<your git>' -p BITRIX_LICENSE_KEY='<license>' -p BITRIX_URL='http://<url-to-bitrix-archive>' | oc create -f -`
 
 ### Parameters:
 - `SOURCE_REPOSITORY_URL` - Git repository for your project
